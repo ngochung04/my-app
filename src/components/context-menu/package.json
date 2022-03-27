@@ -1,0 +1,40 @@
+{
+  "name": "@rs-ui/context-menu",
+  "version": "0.1.0",
+  "description": "A React component that is a Context Menu.",
+  "keywords": [
+    "context-menu",
+    "react",
+    "component"
+  ],
+  "sideEffects": false,
+  "author": "Đặng Ngọc Hùng <hungdn@runsystem.net>",
+  "homepage": "https://devops.runsystem.info/reactjs/rs-ui",
+  "license": "MIT",
+  "main": "dist/rs-ui-context-menu.cjs.js",
+  "module": "dist/rs-ui-context-menu.esm.js",
+  "types": "dist/rs-ui-context-menu.cjs.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://devops.runsystem.info/reactjs/rs-ui.git",
+    "directory": "packages/context-menu"
+  },
+  "bugs": {
+    "url": "https://devops.runsystem.info/reactjs/rs-ui/issues"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1.7.3",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^1.7.3",
+    "react": "^17.0.2"
+  }
+}

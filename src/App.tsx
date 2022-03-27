@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { Menu, MenuItem } from "@chakra-ui/react";
+import React from "react";
+import { ContextMenu } from "./components/ContextMenu";
+import DatePicker from "./components/DatePickerSheeet";
 function App() {
+  const [date, setDate] = React.useState(new Date());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ContextMenu>
+        <Menu>
+          <MenuItem onClick={() => alert("OK")}>New Window</MenuItem>
+          <MenuItem>Open Closed Tab</MenuItem>
+          <MenuItem>Open File</MenuItem>
+        </Menu>
+      </ContextMenu>
+      <DatePicker
+        open={true}
+        handleClose={() => 0}
+        value={date}
+        title="Date Picker"
+        minYear={200}
+      />
+    </>
   );
 }
 
